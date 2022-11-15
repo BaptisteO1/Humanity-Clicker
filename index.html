@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanity Evolution Clicker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1e38524cc0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Description</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="logo"><h1>ClickerHumanity</h1></div>
+            <div class="lancement"><button id="start" onclick="start()">Start</button></div>
+        </nav>
+    </header>
+
+    <section class="home_page">
+
+        <!-- <div id="endscreen"></div> -->
+
+        <div class="container">
+            <h1>Humanity Evolution Clicker</h1>
+            <div class="scoreboard">
+                <div id="tempsTotal">L'humanité à passé : 0 seconde</div>
+                <div id="accelerateur_temps">L'accelerateur est de : 0 seconde</div>
+            </div>
+            <div>
+                <img id="btn" onclick="clicker()" src="img/singe1.png" alt="Premier Singe">
+            </div>
+        </div>
+
+        <div class="upgrade_perso">
+            <div class="persos_monkey">
+                <div class="arrow" onclick="prevPerso()">
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="container_perso">
+                    <div class="class_perso">
+                        <img id="change1" class="singe1" src="img/singe1.png" alt="" onclick="change_img1()">
+                        <p>-</p>
+                    </div>
+                </div>
+                <div class="container_perso">
+                    <div class="class_perso">
+                        <img id="change2" class="singe2" src="img/singe2.png" alt="" onclick="change_img2()">
+                        <p>cost : 500</p>
+                    </div>
+                </div>
+                <div class="container_perso">
+                    <div class="class_perso">
+                        <img id="change3" class="singe2" src="img/singe3.png" alt="" onclick="change_img3()">
+                        <p id="cost_perso3">cost : 5K</p>
+                    </div>
+                </div>
+                <div class="container_perso">
+                <div class="class_perso">
+                    <img id="change4" class="singe3" src="img/cro-magnon1.png" alt="" onclick="change_img4()">
+                    <p id="cost_perso4">cost : 100K</p>
+                </div>
+            </div>
+            <div class="container_perso">
+                <div class="class_perso">
+                    <img id="change5" class="singe3" src="img/cro-magnon2.png" alt="" onclick="change_img5()">
+                    <p>cost : 10M</p>
+                </div></div>
+                
+            <div class="container_perso">
+                <div class="class_perso">
+                    <img id="change6" class="singe3" src="img/homme1.png" alt="" onclick="change_img6()">
+                    <p>cost : 500M</p>
+                </div>
+            </div>
+            <div class="container_perso">
+                <div class="class_perso">
+                    <img id="change7" class="singe3" src="img/robot.png" alt="" onclick="change_img7()">
+                    <p>cost : 10B</p>
+                </div>
+            </div>
+                <div class="arrow"  onclick="nextPerso()">
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_upgrade">
+        <div class="containers_upgrade">
+            <div class="arrow">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="container_upgrade">
+                <img id="btn_item" src="./img/cursor_simple.png" alt="" onclick="upgrade_cursor()">
+                <div class="text">
+                    <p id="cout_cursor">cost : 15</p>
+                    <p id="niveau_cursor">Niveau : 0</p>
+                </div>
+                
+            </div>
+            <div class="container_upgrade">
+                <img id="btn_item" src="./img/pomme.png" alt="" onclick="upgrade_apple()">
+                <div class="text">
+                    <p id="cout_pomme">cost : 100</p>
+                    <p id="niveau_pomme">Niveau : 0</p>
+                </div>
+            </div>
+            <div class="container_upgrade">
+                <img id="btn_item" src="./img/cailloux.png" alt="" onclick="upgrade_cailloux()">
+                <div class="text">
+                    <p id="cout_cailloux">cost : 1000</p>
+                    <p id="niveau_cailloux">Niveau : 0</p>
+                </div>
+            </div>
+            <div class="arrow">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
